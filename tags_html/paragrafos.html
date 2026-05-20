@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parágrafos e texto</title>
+</head>
+<body>
+
+    <h1>Parágrafos e texto:</h1>
+<hr>
+    <p> A tag "p" é parágrafo de texto, texto qualqruer, 
+        vai ser <br>(A tag br quebra a linha)renderizado
+        sempre na mesma linha
+    </p>
+
+    <br> <!-- A tag br quebra a linha, porem é considerado uma gambiarra, é usado para quebrar a linha o css :
+    
+    p {
+        margin-bottom: 1rem;
+    } 
+        -->
+    <p><b>Para deixar em negrito usar a tag b (nao semantica)</b></p>
+    <p><strong>Para deixar em negrito usar a tag strong (tag semantica)</strong></p>
+    
+    <p><i>Esse é um texto com enfase</i> usando uma tag não semantica</p>
+    <p><em>Esse é um texto com enfase usando uma tag semantica</em></p>
+
+    <p>É recomendado usar a tag semantica <strong>"strong"</strong> e <em>"em"</em> pois os interpretadores de acessibilidade dao sentido a ela (ex:se for strong, a voz ao ler fica mais forte). Se for sem semantica, é apenas visual.</p>
+
+    <p>Minha casa tem 80m<sup>2</sup></p> 
+    <!-- para colocar o 2 em cima -->
+
+    <p>Água é h<sub>2</sub>O</p>
+    <!-- para colocar o 2 em baixo -->
+    
+    <p>existe a tag &lt;code&gt; que é usada para indicar que o conteúdo é um trecho de código</p>
+    <p>exemplo: <code>docker compose up</code></p>
+
+    <a href="index.html">Voltar para o índice</a>
+</body>
+</html>
