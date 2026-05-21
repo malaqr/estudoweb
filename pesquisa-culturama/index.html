@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pesquisa Culturama</title>
+    <link rel="icon" href="img/culturama-favico.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
-    <header>
+    <main>
+
+        <header>
+        <img src="img/logo-culturama.png" alt="Logo Culturama">
         <h1>Pesquisa Online</h1>
     </header>
-
     <section>
-        <form action="" method="get">
+        <form action="sucesso.html" method="get">
             <fieldset>
             
                 <!-- DADOS PESSOAIS -->
@@ -100,8 +105,6 @@
                 <input id="city" type="text" name="city">
             </fieldset>
 
-            <br>
-
             <fieldset>
                 <legend>Hábitos</legend>
                 <p>Redes Sociais:</p>
@@ -133,17 +136,49 @@
 
                 <label for="favoriteColor">Cor Favorita</label>
                 <input type="color" name="userFavoriteColor" id="favoriteColor">
+            </fieldset>
+            
+            <fieldset>
 
+                <legend>Opinião</legend>
+                <p>O que você achou do nosso serviço?</p>
+                <input type="radio" name="userOpniao" id="escolhaOtima" value="Ótima">
+                <label for="escolhaOtima">Ótimo</label>
+               <br>
+                <input type="radio" name="userOpniao" id="escolhaBoa" value="Boa">
+                <label for="escolhaBoa">Bom</label>
+                <br>
+                <input type="radio" name="userOpniao" id="escolhaRegular" value="Regular">
+                <label for="escolhaRegular">Regular</label>
+                <br>
+                <input type="radio" name="userOpniao" id="escolhaRuim" value="Ruim">
+                <label for="escolhaRuim">Ruim</label>
+                <br>
+                <label for="userComment">Comentário:</label>
+                
+                <textarea id="userComment" name="userOpniao" placeholder="Escreva aqui..."></textarea>
 
+            </fieldset>
+
+            <fieldset>
+                <legend>Confirmações</legend>
+                <input type="checkbox" name="userLgpd" id="userLgpdTerm" value="accepted" required>
+                <label for="userLgpdTerm">Eu aceito participar da pesquisa</label>
+                <br>
+                <input type="checkbox" name="userGetResult" id="getResult" value="accepted">
+                <label for="getResult">Desejo receber o resultado por email</label>
 
             </fieldset>
             
-            
             <button type="submit">Enviar</button>
+             <button type="reset">Limpar</button>
 
         </form>
 
     </section>  
+
+    </main>
+
 
 
     
